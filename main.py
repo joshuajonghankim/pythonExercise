@@ -14,15 +14,28 @@ a % b
 
 a += 1
 
+a = 'Hello World'
+a = '''This contains many lines...
+Check it
+'''
+
+# operations for string
+a += a
+a *= 2
+print("=" * 50)
+print("My Program")
+print("=" * 50)
+
+a = len(a)
+
+
+
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print_hi('PyCharm')
 
-print(a ** b)
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print(a)
