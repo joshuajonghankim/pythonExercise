@@ -2,7 +2,17 @@
 
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+a = 0
+a = 1.2
+a = 4.24e-10 #4.24 * 10^(-10)
 
+a = 3
+b = 4
+a ** b
+a / b
+a % b
+
+a += 1
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
@@ -12,5 +22,7 @@ def print_hi(name):
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print_hi('PyCharm')
+
+print(a ** b)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
