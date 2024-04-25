@@ -39,3 +39,22 @@ def print_hi(name):
 if __name__ == '__main__':
     print_hi('PyCharm')
 
+def expectedValue(basic_dmg, crit_prob, crit_dmg):
+    result = basic_dmg + basic_dmg * (crit_prob / 100) * (crit_dmg / 100)
+    print("x = " + str(crit_prob) + ", y = " + str(crit_dmg) + ": " + str(result))
+
+basic_dmg = 10000
+count = 0
+crit_prob = 0
+crit_dmg = 200
+while count < 20:
+    expectedValue(basic_dmg, crit_prob, crit_dmg)
+    crit_prob += 5
+    crit_dmg -= 10
+    count += 1
+
+expectedValue(10000, 50, 200)
+expectedValue(10000, 75, 150)
+
+
+
